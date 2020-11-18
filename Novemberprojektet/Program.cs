@@ -1,4 +1,5 @@
 ﻿using System;
+using Raylib_cs;
 
 namespace Novemberprojektet
 {
@@ -6,8 +7,16 @@ namespace Novemberprojektet
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            
+            // Git och GitHub [x]
+            // Klasser []
+            // Variabler i klasser []
+            // Metoder i klasser []
+            // Instanser av klasser []
+            // Konstruktorer []
+            // Static []
+            // Klassdiagram []
+            // Synlighet (public/private/protected) []
+
             
         }
     }
