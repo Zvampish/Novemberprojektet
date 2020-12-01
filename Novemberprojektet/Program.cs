@@ -8,7 +8,7 @@ namespace Novemberprojektet
         static void Main(string[] args)
         {
             // Git och GitHub [x]
-            // Klasser []
+            // Klasser [x]
             // Variabler i klasser []
             // Metoder i klasser []
             // Instanser av klasser []
@@ -17,9 +17,15 @@ namespace Novemberprojektet
             // Klassdiagram []
             // Synlighet (public/private/protected) []
 
+
+            Paddle paddle1 = new Paddle();
+            Paddle paddle2 = new Paddle();
+            paddle1.x = 20; 
+            paddle1.y = paddle2.y = 325;
+            paddle2.x = 760;
+
+
             int windowSize = 800;
-            int rectangleSizeX = 20;
-            int rectangleSizeY = 125;
 
             Raylib.InitWindow(800, 800, "Hello Man!");
 
@@ -54,7 +60,7 @@ namespace Novemberprojektet
                 {
                     playerOneY += .2f;
                 }
-                else if(playerOneY > windowSize - rectangleSizeY)
+                else if(playerOneY > windowSize - paddle1.height)
                 {
                     playerOneY -=.2f;
                 }
@@ -63,7 +69,7 @@ namespace Novemberprojektet
                 {
                     playerTwoY += .2f;
                 }
-                else if(playerTwoY > windowSize - rectangleSizeY)
+                else if(playerTwoY > windowSize - paddle2.height)
                 {
                     playerTwoY -=.2f;
                 }
@@ -72,9 +78,9 @@ namespace Novemberprojektet
 
                 Raylib.ClearBackground(Color.BLACK);
 
-                Raylib.DrawRectangle((int)playerOneX,(int)playerOneY, rectangleSizeX, rectangleSizeY, Color.WHITE);
+                Raylib.DrawRectangle((int)playerOneX,(int)playerOneY, paddle1.width, paddle1.height, Color.WHITE);
 
-                Raylib.DrawRectangle((int)playerTwoX,(int)playerTwoY, rectangleSizeX, rectangleSizeY, Color.WHITE);
+                Raylib.DrawRectangle((int)playerTwoX,(int)playerTwoY, paddle2.width, paddle2.height, Color.WHITE);
 
                 Raylib.EndDrawing();
             
