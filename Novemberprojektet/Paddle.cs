@@ -9,7 +9,7 @@ namespace Novemberprojektet
         public int width = 20;
         
         public float x;
-        public float y;
+        public float y; 
 
         public Paddle()
         {
