@@ -13,15 +13,17 @@ namespace Novemberprojektet
         public float x;
         public float y;
 
-        public Rectangle rectangle = new Rectangle();
-
         //En statisk slumpgenerator som alla paddlar delar på
 
         static Random generator = new Random();
 
+        private int grade;
+
+        //En konstruktor som använder en slumpgeneratorn ovan
+
         public Paddle()
         {
-            
+            grade = generator.Next(1, 11);
         }
     }
 }

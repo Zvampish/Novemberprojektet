@@ -12,13 +12,13 @@ namespace Novemberprojektet
             // Variabler i klasser [x]
             // Metoder i klasser [x]
             // Instanser av klasser [x]
-            // Konstruktorer []
-            // Static []
+            // Konstruktorer [x]
+            // Static [x]
             // Klassdiagram []
-            // Synlighet (public/private/protected) []
-            // Kommentarer []
+            // Synlighet (public/private/protected) [x]
+            // Kommentarer [x]
 
-            //Skapar två instanser av klassen Paddle, men den används inte i själva spelet.
+            //Skapar två instanser av klassen Paddle
 
             Paddle paddle1 = new Paddle();
             Paddle paddle2 = new Paddle();
@@ -87,8 +87,6 @@ namespace Novemberprojektet
                     paddle2.y -=.2f;
                 }
 
-                //Skapar ett rityta
-
                 Raylib.BeginDrawing();
 
                 //Gör bakgrundsfärgen till svart
@@ -100,8 +98,6 @@ namespace Novemberprojektet
                 Raylib.DrawRectangle((int)paddle1.x,(int)paddle1.y, paddle1.width, paddle1.height, Color.WHITE);
 
                 Raylib.DrawRectangle((int)paddle2.x,(int)paddle2.y, paddle2.width, paddle2.height, Color.WHITE);
-
-                //Stänger fönstret
 
                 Raylib.EndDrawing();
             

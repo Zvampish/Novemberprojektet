@@ -1,0 +1,25 @@
+<Project>
+  <Name>Pong </Name>
+  <ProjectItem type="NClass.DiagramEditor.ClassDiagram.Diagram" assembly="NClass.DiagramEditor, Version=2.4.1823.0, Culture=neutral, PublicKeyToken=null">
+    <Name>Untitled</Name>
+    <Language>CSharp</Language>
+    <Entities>
+      <Entity type="Class">
+        <Name>Paddle</Name>
+        <Access>Public</Access>
+        <Location left="34" top="35" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">public int height</Member>
+        <Member type="Field">public int width</Member>
+        <Member type="Field">public float x</Member>
+        <Member type="Field">public float y</Member>
+        <Member type="Field">static Random generator</Member>
+        <Member type="Field">private int grade</Member>
+        <Member type="Constructor">public Paddle()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+    </Entities>
+    <Relationships />
+  </ProjectItem>
+</Project>
