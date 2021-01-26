@@ -7,16 +7,6 @@ namespace Novemberprojektet
     {
         static void Main(string[] args)
         {
-            // Git och GitHub [x]
-            // Klasser [x]
-            // Variabler i klasser [x]
-            // Metoder i klasser [x]
-            // Instanser av klasser [x]
-            // Konstruktorer [x]
-            // Static [x]
-            // Klassdiagram []
-            // Synlighet (public/private/protected) [x]
-            // Kommentarer [x]
 
             //Skapar två instanser av klassen Paddle
 
